@@ -1,0 +1,59 @@
+package hi;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.Test;
+
+public class Digibility {
+	@Test
+	public void loginData() throws InterruptedException {
+
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://testapp.digibility.ai/login");
+
+		WebElement txtEmail = driver.findElement(By.id("email"));
+		txtEmail.sendKeys("vaishnavigadge53@gmail.com");
+
+		WebElement txtPassword = driver.findElement(By.id("password"));
+		txtPassword.sendKeys("Vaish20@2001");
+
+		WebElement btnSignin = driver
+				.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/div[2]/div[2]/form/button"));
+		btnSignin.click();
+
+		WebElement btn = driver.findElement(By.xpath("a[title='Analytics']"));
+	WebElement txtname = driver.findElement(By.xpath("//*[@id=\"user-search\"]"));
+	txtname.sendKeys("Vaishnavi Gadge");
+
+		// Thread.sleep(8000);
+	}
+
+	@Test	public void click() throws InterruptedException {
+
+	WebDriver driver = new ChromeDriver();
+	driver.get("https://testapp.digibility.ai/admin/dashboard");
+
+	WebElement click = driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/header/div/div[1]/button"));
+	click.click();
+
+	WebElement clickAnalytics = driver
+			.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div[2]/div[2]/div/div[2]/nav/a[7]"));
+	clickAnalytics.click();
+
+		Thread.sleep(3000);
+	}
+
+@Test
+	public void method() {
+	WebDriver driver = new ChromeDriver();
+	driver.get("https://testapp.digibility.ai/admin/Analytics");
+
+	WebElement txtname = driver.findElement(By.xpath("//*[@id=\"user-search\"]"));
+	txtname.sendKeys("Vaishnavi Gadge");
+}
+
+
+}
