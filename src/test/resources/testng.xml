@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Digibility UI Tests" parallel="false">
+  <test name="All Tests">
+    <classes>
+      <class name="hi.Digibility"/>
+      <class name="hi.LoginPage"/>
+      <class name="hi.Billing"/>
+      <class name="hi.DashboardCalendarTest"/>
+    </classes>
+  </test>
+</suite>
