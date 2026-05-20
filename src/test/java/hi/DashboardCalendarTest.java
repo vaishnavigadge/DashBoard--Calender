@@ -44,7 +44,7 @@ public class DashboardCalendarTest {
 		System.out.println("Content Calendar Clicked Successfully");
 
 		WebElement post = driver.findElement(By.xpath(
-				"//*[@id="root"]/div/div[1]/div/div[2]/main/div/div/div[2]/div/div/div/div[1]/div[32]/div/div/div[2]/button[2]/div/div[2]/div/span[1]"));
+				"//*[@id=\"root\"]/div/div[1]/div/div[2]/main/div/div/div[2]/div/div/div/div[1]/div[32]/div/div/div[2]/button[2]"));
 		post.click();
 
 		driver.quit();
